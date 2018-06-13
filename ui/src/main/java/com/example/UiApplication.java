@@ -11,7 +11,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.time.LocalDateTime;
 @SpringBootApplication
 @EnableZuulProxy
 @EnableOAuth2Sso
@@ -25,13 +24,6 @@ public class UiApplication {
             return "index";
         }
     }
-
-    public static class Message {
-        public String text;
-        public String username;
-        public LocalDateTime createdAt;
-    }
-
 
     public static void main(String[] args) {
         SpringApplication.run(UiApplication.class, args);
