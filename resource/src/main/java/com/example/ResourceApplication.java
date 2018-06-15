@@ -34,9 +34,6 @@ public class ResourceApplication extends ResourceServerConfigurerAdapter {
     @Value("${spring.application.name}")
     String applicationName;
 
-    @Autowired
-    TokenStore tokenStore;
-
     public static void main(String[] args) {
         SpringApplication.run(ResourceApplication.class, args);
     }
@@ -69,13 +66,6 @@ public class ResourceApplication extends ResourceServerConfigurerAdapter {
                 .antMatchers(HttpMethod.GET, "/api/**").access("#oauth2.hasScope('read')")
                 .antMatchers(HttpMethod.POST, "/api/**").access("#oauth2.hasScope('write')");
     }
-
-
-    @Override
-    public void configure(ResourceServerSecurityConfigurer resources) {
-        resources.resourceId(applicationName).tokenStore(tokenStore);
-    }
-
 
     @Profile("!cloud")
     @Bean

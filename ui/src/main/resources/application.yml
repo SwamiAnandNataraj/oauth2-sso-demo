@@ -13,7 +13,17 @@ security:
       scope: read, write
     resource:
       jwt:
-        key-uri: ${auth-server}/oauth/token_key
+        key-value: |
+          -----BEGIN PUBLIC KEY-----
+          MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA36clBU2NYn5iZG/swkq3
+          rtUUrXoGSrlvpxfmFpFp6bg9xu/378pi+8UC54DMBka+m/hJIvdl7dpwWFw6tWcg
+          mXJ59zljwgG+VbkKrtQVwsQYsjh++vUKj9oGmtCZX7UE/Rnc7k6w/HMPUalu9gIT
+          x3hXo+sWfWHQYHhKs5sjKJtTixHJ29Rqp5U87iZTPosVaIBzkOcRqM905o5JmAHP
+          9pcR3Gy59eb4r3KJgIqssv7OcVG0PA3Qd7iNIMnhbz0VaQjbibf9b3btEsc2J8Vl
+          wfxX4DC8V3b2J/IqxQP3oJ0eAMvygVR9mkmHGPxy1dA+0OIeM+3nUsFzL3QyZMYD
+          /wIDAQAB
+          -----END PUBLIC KEY-----
+
 logging:
   level:
     org.springframework.security: DEBUG
