@@ -1,5 +1,11 @@
-** TODO **
-this is forked repo, undone.
+forked from https://github.com/making/oauth2-sso-demo
+
+zuul branch changed to master
+oauth2 config is in UI
+verification public key is in both UI and resource
+signing key is in auth
+
+TODO check do we need password access level auth?
 
 # OAuth2 SSO Demo with Spring Boot + Spring Security OAuth2
 
@@ -37,11 +43,3 @@ Get Resources
 ``` console
 $ curl -H 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0NjMzNzQzNDYsInVzZXJfbmFtZSI6InVzZXIiLCJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOIiwiUk9MRV9VU0VSIl0sImp0aSI6IjhlZDA0MDM2LWMwYjItNDJhZC1hZThmLTNiMTg3NGE5YjlmMiIsImNsaWVudF9pZCI6ImRlbW8iLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXX0.0p9uddJWyKafC0pzubQdCJR4wd9jAZdi07xOZfT8H_mQa629ybz-hT9KqyTu4uf6JdInIovmb6YkRS3OixBfStyULKbBKKdQqhuir_IYHBaxkMyE4CewnXu9c1VpF6qhzL8ucXZ7xiT9eRDhbxwQhCb305f1v4yZMvdPw5ZSLm9Fje6mwCIrq-uzqQlaPP-zvr1_5wkqNc5fy0jjQkfAKTSTKLUBybqG80bmAD9rB6hB--QnIYjtdsT8jBwoH03HHBUL31ABb2lxGXNc248BwCkfmYUBwsFt32eeT2adfhLnfZ2L7noBJVLV3E3AioMbkapFymYZGv7qlG-hYFXozw' localhost:7777/api/messages
 [{"text":"Hello World!","username":"user","createdAt":"2016-05-16T12:53:03.263"}]
-```
-
-## Variants
-
-* [JWT version](https://github.com/making/oauth2-sso-demo/tree/jwt)
-* [Zuul integration](https://github.com/making/oauth2-sso-demo/tree/zuul) using Ajax
-* [Use GitHub API instead of Authorization Server](https://github.com/making/oauth2-sso-demo/tree/github)
-* [Use Google+ API instead of Authorization Server](https://github.com/making/oauth2-sso-demo/tree/google)
