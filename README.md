@@ -2,7 +2,7 @@ forked from https://github.com/making/oauth2-sso-demo
 
 * zuul branch changed to master
 * oauth2 config is in UI
-* verification public key is in both UI and resource
+* verification public key is in both UI and resource (can go to config server main config file)
 * signing key is in auth
 
 TODO check do we need password access level auth?
