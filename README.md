@@ -1,3 +1,7 @@
+Example of using java spring cloud security 
+jwt token relay zuul proxy
+
+
 forked from https://github.com/making/oauth2-sso-demo
 
 * zuul branch changed to master
